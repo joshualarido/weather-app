@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/logowhite.png" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="search-section">
+            <div class="title-section">
+                <div class="logo">
+                    <img src="./assets/logo.png" alt="condition-icon" class="logo">
+                    <h1>WeatherApp</h1>
+                </div>
+                <h2 class="subheading">So... the weather, huh?</h2>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search by name or by coordinates..." id="search-bar">
+                <button id="search-btn"><i class="fa fa-search" aria-hidden="true"></i>Search</button>
+            </div>
+        </div>
+        <div class="output-section">
+            <div id="map"></div>
+            <div class="quickview-section" id="quickview-section">
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
